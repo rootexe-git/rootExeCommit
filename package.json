@@ -1,0 +1,25 @@
+{
+  "name": "rootexeforums",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass web/src/sass/App.scss web/src/css/App.css -w",
+    "start": "npm-run-all --parallel watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootexe-git/rootExeForums.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/rootexe-git/rootExeForums/issues"
+  },
+  "homepage": "https://github.com/rootexe-git/rootExeForums#readme"
+}
