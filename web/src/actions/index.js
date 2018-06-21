@@ -1,7 +1,9 @@
 import * as profile from './profile';
+import * as bitbucket from './bitbucket';
 
 const actions = Object.assign({}, 
-    profile
+    profile,
+    bitbucket
 );
 
 export default actions;

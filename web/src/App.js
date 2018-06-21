@@ -5,11 +5,16 @@ import './css/App.css';
 import Base from './base';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App"><Base /></div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        window.bitbucketApiKey = 'X4NKKSP2eyaPCcRGK9';
+    }
+    
+    render() {
+        return (
+            <div className="App"><Base /></div>
+        );
+    }
 }
 
 export default App;

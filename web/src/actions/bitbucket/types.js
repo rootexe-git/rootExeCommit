@@ -1,0 +1,1 @@
+export const BITBUCKET_TOKEN = 'bitbucket_token';

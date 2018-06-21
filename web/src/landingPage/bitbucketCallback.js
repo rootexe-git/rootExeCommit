@@ -5,19 +5,15 @@ import actions from './../actions';
 class LandingPage extends Component {
     
     componentDidMount() {
-        this.props.profile_fetch();
-    }
-
-    onLoginBitbucket() {
-        window.location.href = 'https://bitbucket.org/site/oauth2/authorize?client_id='+window.bitbucketApiKey+'&response_type=code';
+        var url = new URL(window.location);
+        var code = url.searchParams.get("code");
+        this.props.bitbucket_token(code);
     }
 
     render() {
         return (
             <div className="LoginScreen">
-                <div className="loginBtn" onClick={this.onLoginBitbucket.bind(this)}>
-                    <i className="fab fa-bitbucket"></i> <span>Login With Bitbucket</span>
-                </div>
+                <div className="loading"></div>
             </div>
         );
     }

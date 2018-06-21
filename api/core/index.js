@@ -4,6 +4,7 @@ module.exports.promise = require('promise');
 module.exports.bodyParser = require('body-parser');
 module.exports.cookieParser = require('cookie-parser');
 module.exports.cookieSession = require('cookie-session');
+module.exports.request = require('request');
 
 module.exports.app = module.exports.express();
 module.exports.app.use(module.exports.bodyParser.json());

@@ -1,20 +1,49 @@
 :root {
   --color-primary: #cd5360;
-  --color-secondary: #438496; }
+  --color-secondary: #438496;
+  --color-white: #ffffff; }
 
 html,
 body,
 #root,
-.App {
+.App,
+.base {
   background-color: var(--color-secondary);
   width: 100%;
   height: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Muli', sans-serif !important; }
 
-.App {
-  min-height: 100%;
-  height: fit-content;
-  overflow: hidden;
-  overflow-y: scroll; }
+.LoginScreen {
+  --bitbucket-color: rgb(7, 71, 166);
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .LoginScreen .loginBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bitbucket-color);
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+    color: var(--color-white);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease 0.3s; }
+    .LoginScreen .loginBtn i {
+      font-size: 25px;
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      vertical-align: middle; }
+    .LoginScreen .loginBtn span {
+      margin-left: 15px;
+      font-weight: 600;
+      display: inline-block;
+      vertical-align: middle; }
+    .LoginScreen .loginBtn:hover {
+      transform: translate(-50%, -50%) scale(1.1); }
